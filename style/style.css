@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+main{
+    display: grid;
+    grid-template-areas: 
+    "h h h h"
+    "n n n n"
+    "ar ar ar as"
+    "s s s s"
+    "f f f f";
+    margin: auto;
+    max-width: 800px;
+}
+html{
+    background-color: grey;
+}
+/*article,header,nav,footer,section,aside{
+    border: 1px solid black;
+    padding: 2px;
+}*/
+p{
+    text-align: justify;
+    letter-spacing: 2px;
+    font-family: 'Roboto',sans-serif;
+
+}
+article{
+    grid-area: ar;
+}
+aside{
+    grid-area: as;
+    font-family: 'Roboto',sans-serif;
+}
+aside ul{
+    list-style: none;
+    padding-right: 15px;
+}
+header{
+    grid-area: h;
+}
+nav{
+    grid-area: n;
+    background-color: black;
+}
+nav ul{
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+li a{
+    text-decoration: none;
+}
+footer{
+    grid-area: f;
+}
+section{
+    grid-area: s;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+section div{
+    padding: 5px;
+}
+section img{
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+header img{
+    max-width: 100%;
+    height: auto;
+    width: 100px;
+    border-radius: 5px;
+}
+#meis{
+    float: left;
+    max-width: 150px;
+    padding: 5px;
+}
+@media screen  and (max-width: 600px) {
+    main{
+        display: grid;
+        grid-template-areas: "h"
+                             "n" 
+                             "ar"
+                             "as"
+                             "s"
+                             "f";
+    }
+    section{
+        grid-area: s;
+        background-color: grey;
+        grid-template-columns: 1fr;
+     }
+     nav ul{
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+}

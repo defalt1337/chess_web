@@ -1,0 +1,52 @@
+main{
+    max-width: 1000px;
+    margin: auto;
+}
+
+table img{
+    max-width:20px;
+    max-height: 20px;
+}
+table th{
+    width: 20px;
+    height: 20px;
+    background-color: grey;
+}
+table{
+    border: 1px solid grey;
+    border-collapse: collapse;
+    margin: auto;
+}
+table td{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black
+}
+tr:nth-child(odd) td:nth-child(even){
+    background-color: lightgrey;
+}
+tr:nth-child(even) td:nth-child(odd){
+    background-color: lightgrey;
+}
+@media screen  and (max-width: 600px) {
+    main{
+        display: grid;
+        grid-template-areas: "h"
+                             "n" 
+                             "ar"
+                             "as"
+                             "s"
+                             "f";
+    }
+    section{
+        grid-area: s;
+        background-color: grey;
+        grid-template-columns: 1fr;
+     }
+     nav ul{
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+}
